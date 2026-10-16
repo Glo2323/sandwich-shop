@@ -8,8 +8,8 @@ public class PointOfSale {
     public static void main(String[] args) {
 
         //create a scanner
-
         Scanner sandwichSc = new Scanner(System.in);
+
 
         //Prompt the user for the size of the sandwich
         System.out.println("""
@@ -20,6 +20,8 @@ public class PointOfSale {
         int sandwich = sandwichSc.nextInt();
         double sandwichPrice = 0;
 
+
+        //check size of the sandwich
         if (sandwich == 1){
             sandwichPrice = 5.45;
 
@@ -41,6 +43,7 @@ public class PointOfSale {
 
         String sandwichLoaded = sandwichSc.nextLine();
 
+        //check the size of the sandwich with loaded
         if (sandwichLoaded.equals("yes")){
 
             if (sandwich == 1){
@@ -55,6 +58,7 @@ public class PointOfSale {
 
         }
 
+
         //Prompt the user for their age
         System.out.println("Whats your age:");
 
@@ -63,6 +67,7 @@ public class PointOfSale {
         double discount = 0;
 
 
+        //checking users age
         if (age <= 17){
             discount = .10;
 
