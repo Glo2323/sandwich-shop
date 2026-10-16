@@ -12,10 +12,6 @@ public class PointOfSale {
         Scanner sandwichSc = new Scanner(System.in);
 
         //Prompt the user for the size of the sandwich
-
-        int regular = 1;
-        int large = 2 ;
-
         System.out.println("""
                 What size sandwich would you like
                 1: Regular: base price $5.45
@@ -37,7 +33,7 @@ public class PointOfSale {
         }
 
         //Placeholder for enter
-        String enter = sandwichSc.nextLine();
+        sandwichSc.nextLine();
 
 
         //Prompt user if they would like loaded (yes/ no)
@@ -45,18 +41,13 @@ public class PointOfSale {
 
         String sandwichLoaded = sandwichSc.nextLine();
 
-
-
         if (sandwichLoaded.equals("yes")){
-            System.out.println("Would you like it regular or large");
 
-            String sandwichLoadedSize = sandwichSc.nextLine();
-
-            if (sandwichLoadedSize.equals("regular")){
+            if (sandwich == 1){
                 sandwichPrice = sandwichPrice + 1.00;
 
                 System.out.println("You got a load sandwich");
-            } else if (sandwichLoadedSize.equals("large")) {
+            } else if (sandwich == 2) {
                 sandwichPrice = sandwichPrice + 1.75;
 
                 System.out.println("You got a large load sandwich");
