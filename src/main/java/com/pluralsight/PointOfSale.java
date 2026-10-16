@@ -33,6 +33,34 @@ public class PointOfSale {
             System.out.printf("Price is $%.2f\n", sandwichPrice);
         }
 
+        //Placeholder for enter
+        String enter = sandwichSc.nextLine();
+
+
+        //Prompt user if they would like loaded (yes/ no)
+        System.out.println("Would you like your sandwich loaded (yes/no)");
+
+        String sandwichLoaded = sandwichSc.nextLine();
+
+
+
+        if (sandwichLoaded.equals("yes")){
+            System.out.println("Would you like it regular or large");
+
+            String sandwichLoadedSize = sandwichSc.nextLine();
+
+            if (sandwichLoadedSize.equals("regular")){
+                sandwichPrice = sandwichPrice + 1.00;
+
+                System.out.println("You got a load sandwich");
+            } else if (sandwichLoadedSize.equals("large")) {
+                sandwichPrice = sandwichPrice + 1.75;
+
+                System.out.println("You got a large load sandwich");
+            }
+
+        }
+
 
 
         //Prompt the user for their age
