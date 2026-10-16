@@ -16,7 +16,10 @@ public class PointOfSale {
         int regular = 1;
         int large = 2 ;
 
-        System.out.println("What size sandwich would you like 1 for regular, 2 for large: ");
+        System.out.println("""
+                What size sandwich would you like
+                1: Regular: base price $5.45
+                2: Large: base price $8.95""");
 
         int sandwich = sandwichSc.nextInt();
         double sandwichPrice = 0;
@@ -61,8 +64,6 @@ public class PointOfSale {
 
         }
 
-
-
         //Prompt the user for their age
         System.out.println("Whats your age:");
 
@@ -74,12 +75,12 @@ public class PointOfSale {
         if (age <= 17){
             discount = .10;
 
-            System.out.println("You received a 10 percent discount ");
+            System.out.println("You received a 10% discount ");
 
         } else if (age >= 65) {
             discount = .20;
 
-            System.out.println("You received a 20 percent discount" );
+            System.out.println("You received a 20% discount" );
 
         }else{
             System.out.println("No discount applied.");
